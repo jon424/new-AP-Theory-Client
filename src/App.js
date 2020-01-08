@@ -9,7 +9,7 @@ import PitchQuiz from './Quiz/PitchQuiz';
 import MajorScalesAndKeySignaturesQuiz from './Quiz/MajorScalesAndKeySignaturesQuiz';
 import Login from './Login/Login';
 import Signup from './Signup/Signup';
-import Topic from './Topic/Topic';
+import Pitch from './Topic/Pitch';
 
 class App extends React.Component {
 
@@ -42,7 +42,7 @@ class App extends React.Component {
         <Route path='/topics' component={Topics} >
         </Route>
 
-        <Route path='/topic' component={Topic} >
+        <Route path='/pitch' component={Pitch} >
         </Route>
 
         <Route path='/quizzes' component={Quizzes} >

@@ -8,7 +8,7 @@ class Topics extends React.Component {
       <React.Fragment>
 
       <h1>Topics</h1>
-      <Link to="/topic" >Topic</Link>
+      <Link to="/pitch" >Pitch</Link>
 
 
 

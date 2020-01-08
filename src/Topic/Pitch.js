@@ -5,7 +5,7 @@ import './TopicAttachments/alto-clef-lines-spaces-audio.mp3';
 import altoClefLinesAndSpaces from './TopicAttachments/altoClefLinesAndSpaces.png';
 import altoClefAudio from './TopicAttachments/alto-clef-lines-spaces-audio.mp3';
 
-class Topic extends React.Component {
+class Pitch extends React.Component {
   constructor(props) {
     super(props);
 
@@ -77,8 +77,5 @@ render() {
     )
   }
 }
-//commentlj;ljlj
-//another comment line 3:33pm 
-//as;ldkfja;lskdjfalksjdfa;lskdjfak;ldsfjak;sdfj
 
-export default Topic;
+export default Pitch;
