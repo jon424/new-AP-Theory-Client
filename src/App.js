@@ -10,6 +10,7 @@ import MajorScalesAndKeySignaturesQuiz from './Quiz/MajorScalesAndKeySignaturesQ
 import Login from './Login/Login';
 import Signup from './Signup/Signup';
 import Pitch from './Topic/Pitch';
+import MajorScalesAndKeySignatures from './Topic/MajorScalesAndKeySignatures';
 
 class App extends React.Component {
 
@@ -43,6 +44,9 @@ class App extends React.Component {
         </Route>
 
         <Route path='/pitch' component={Pitch} >
+        </Route>
+
+        <Route path='/major-scales-and-key-signatures' component={MajorScalesAndKeySignatures} >
         </Route>
 
         <Route path='/quizzes' component={Quizzes} >

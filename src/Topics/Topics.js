@@ -9,9 +9,10 @@ class Topics extends React.Component {
 
       <h1>Topics</h1>
       <Link to="/pitch" >Pitch</Link>
+      <br></br>
+      <Link to="/major-scales-and-key-signatures" >Major Scales and Key Signatures</Link>
 
-
-
+    
 
       </React.Fragment>
      );
