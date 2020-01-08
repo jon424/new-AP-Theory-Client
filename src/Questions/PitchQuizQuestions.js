@@ -13,7 +13,7 @@ export const PitchQuizQuestions =  {
   "quizTitle": "Pitch Quiz",
   "quizSynopsis": "Test your knowledge on reading musical pitch, as covered on the AP Music Theory Exam.",
   "questions": [
-    {//`<img src=${q1} alt='question_1' />`
+    {//`<img src={'../Quiz/QuizPics/pitch_quiz_q1.png'} alt='question_1' />`
     //"https://images.unsplash.com/photo-1554079501-a254f876fc77?ixlib=rb-1.2.1&w=1000&q=80"
     "question": "this is question",
     "questionPic": "https://dummyimage.com/600x400/000/fff&text=X", // if you need to display Picture in Question
