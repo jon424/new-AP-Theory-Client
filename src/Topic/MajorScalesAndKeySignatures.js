@@ -12,6 +12,7 @@ import FlatKeys from './TopicAttachments/FlatKeySignaturesPic.png';
 import Circle from './TopicAttachments/Circle-of-Fifths-Simple-1024x1024.png';
 import ChromaticSharps from './TopicAttachments/chromatic-scale-sharps-audio.mp3';
 import ChromaticFlats from './TopicAttachments/chromatic-scale-flats-audio.mp3';
+import '../index.css';
 
 class MajorScalesAndKeySignatures extends React.Component {
   constructor(props) {
@@ -28,14 +29,15 @@ class MajorScalesAndKeySignatures extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <div className="topic-page">
         <h1>Major Scales and Key Signatures</h1>
-        <div id="topic-page">
+<div className="main-content-type">
   <h2>Major Scales and Key Signatures</h2>
   A <strong>scale</strong> is simply a collection of pitches in whole and half-step patterns. There are many different kinds of scales based on the patterns of whole and half-steps that they contain. This section will focus on one of these types of scales: the <i>major scale</i>.
   
   In order to understand any kind of scale, it helps to first understand the <strong>chromatic scale.</strong> The chromatic scale is a scale with all pitches spaced a half-step apart. If you look at a piano keyboard, play a key with your finger, and then move to the next closest key on the keyboard - which may be a black or a white key depending on which pitch you started with - and continue in this way, you are playing a chromatic scale. The piano keyboard is set up in such a way that each key is a half-step apart from the key closest to it - above (higher in pitch) or below (lower in pitch).
   <br></br><br></br>
-  <img className="keyboard-image" src={Keyboard} alt="keyboard-image" width="25%"/>
+  <img className="keyboard-image" src={Keyboard} alt="piano-keyboard" width="25%"/>
   <br></br><br></br>
   
   <h2>Sharps and Flats</h2>
@@ -66,7 +68,7 @@ class MajorScalesAndKeySignatures extends React.Component {
   The <strong>major scale</strong> has a different pattern than the chromatic scale - it is arranged using both whole and half-steps. A <strong>whole step</strong> is made up of two half-steps. Just like in math, two halves equal one whole.
   <br></br><br></br>
   Imagine placing your finger on the pitch “C” on the piano (any C will do - take a look at the keyboard picture above if you don't have a keyboard in front of you). A whole step above "C" would be "D", since there are two half-steps between "C"and "D":
-    <div className="half-step-explained">
+   {/* <div className="half-step-explained"> */}
       <ul>
         <li>C to C# = 1 half-step</li>
         <br></br>
@@ -74,14 +76,14 @@ class MajorScalesAndKeySignatures extends React.Component {
         <br></br>
         <li>Therefore, C to D = 1 whue-step</li>
       </ul>
-    </div>
+   
 <h2>Major Scale Pattern of Whole and Half-Steps</h2>
           All major scales have the same pattern. <i>It is extremely helpful to memorize this pattern:</i>
           <br></br><br></br>
           <strong>W-W-H-W-W-W-H</strong>
           <br></br><br></br>
-          <div className="naming-major-scales">
-
+    
+{/* <div className="naming-major-scales"> */}
       <h2>Naming Major Scales</h2>
           The name of a particular major scale starts with the name of the first pitch in the scale. Let’s “build” the F major scale.
           <br></br><br></br>
@@ -107,7 +109,7 @@ class MajorScalesAndKeySignatures extends React.Component {
           <span><strong>C &emsp; D &emsp; E &emsp; F &emsp; G &emsp; A &emsp; B &emsp; C</strong></span>
           <br></br><br></br>
           Notice also that there is no black key inbetween E and F, or B and C. So, “E to F” and “B to C” are half-steps.
-      </div>
+      
           
           <h2>Key Signatures</h2>
           
@@ -141,12 +143,15 @@ B &emsp; F</strong></span>
           <br></br><br></br>
           <img className="circle-of-fifths" src={Circle} alt="circle-of-fifths"/>
           <br></br><br></br>
-          Time to test what you have learned! <Link to="/major-scales-and-key-signatures-quiz">Click here to take the Major Scales and Key Signatures Quiz.</Link>
+          <i><strong>Time to test what you have learned!</strong></i>
+          <Link className="link-to-quiz" to="/pitch-quiz"><i><strong> Click here to take the Major Scales and Key Signatures Quiz.</strong></i></Link>
         </div>
+        <br></br><br></br>
 
         <div className="comments-section-intro">
           Have questions/comments about this material, or anything regarding AP Music Theory in general? Leave your name and a comment below!
-    </div>
+        </div>
+      </div>
 
         <div>
           {!this.state.error && <Comments topic={'major-scales-and-key-signatures'} />}

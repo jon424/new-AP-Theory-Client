@@ -35,13 +35,22 @@ body {
 }
 
 /*TOPICS PAGES*/
+.img {
+  text-align: center;
+}
+
+.audio {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.7em;
+}
 
 .topic-page h1 {
   font-size: 3em;
 }
 .topic-page h1, h2 {
   font-family: 'Lato', sans-serif;
-  text-align: center;;
+  text-align: center;
 } 
 
 .topic-page .main-content-type {
@@ -50,11 +59,32 @@ body {
   display: inline-block;
   text-align: justify;
   width: 55%;  
+  
 }
 
 .main-content-type .staff-lines-and-spaces {
   display: inline-block;
+  text-align: center;
   
+}
+
+.comments-section-intro {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.link-to-quiz {
+  color: red;
+  text-decoration: none;
+}
+.link-to-quiz:hover {
+  color: blue;
+  text-decoration: none;
+}
+.link-to-quiz:active {
+  color: green;
+  text-decoration: none;
 }
 
 
