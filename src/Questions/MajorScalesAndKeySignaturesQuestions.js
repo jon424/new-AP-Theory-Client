@@ -39,6 +39,8 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "explanation": "D major has 2 sharps: F# and C#.",
       "point": "20"
     },
+
+    
     {//question 2
       "question": "What is the key signature for E major?",
       "questionType": "photo",
@@ -87,5 +89,6 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "explanation": "Bb major has two flats: Bb and Eb.",
       "point": "30"
     },
+   
   ]
 } 

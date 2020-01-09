@@ -25,15 +25,18 @@ class Pitch extends React.Component {
   render() {
     return (
       <React.Fragment>
+    <div className="topic-page">
         <h1>Pitch</h1>
-        <div id="topic-page">
+        <div className="main-content-type">
           In physics, sound is a longitudinal wave that travels through a medium (such as air) that may be perceived by the hearing mechanism in the ear. We measure a sound according to its <strong>frequency</strong>, or rate of vibration. Frequency is measured according to vibrations per second, or <strong>Hertz (Hz)</strong>. You may know that musicians in a symphony orchestra  tune to an A 440 before performing a concert. This specific pitch has a frequency of 440 vibrations per second, or 440 Hz.
+        
       <br></br><br></br>
       <h2>Pitch is FREQUENCY!</h2>
           In music, <strong>pitch</strong> refers to a tone vibrating at a specific frequency. A pitch vibrating at 1000 Hz is vibrating faster than a pitch vibrating at 300 Hz. We say that a pitch vibrating at a faster frequency is <i>higher</i> than a pitch vibrating at a slower frequency.
       <br></br><br></br>
       <h2>The Musical Staff</h2>
           Music can be written on a <strong>staff</strong>, which is simply five lines and four spaces. When referring to more than one staff, use the plural word  <strong>staves</strong>. Lines and spaces are numbered like this:
+          <br></br><br></br>
       <img className="staff-lines-and-spaces" src={staffLinesAndSpaces} alt="staff-lines-and-space-names" width="25%"/>
           <br></br><br></br>
           Each line or space has a letter name from the alphabet. The “musical alphabet” only has seven different letters - much simpler than the English alphabet! The musical alphabet goes like this:
@@ -74,9 +77,11 @@ class Pitch extends React.Component {
           <h2>Take the Pitch Quiz!</h2>
           Time to test what you have learned! <Link to="/pitch-quiz">Click here to take the Pitch Quiz.</Link>
         </div>
+        <br></br><br></br>
 
         <div className="comments-section-intro">
           Have questions/comments about this material, or anything regarding AP Music Theory in general? Leave your name and a comment below!
+        </div>
     </div>
 
 

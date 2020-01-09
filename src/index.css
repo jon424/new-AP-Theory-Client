@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -20,7 +22,7 @@ code {
 body {
   margin: 0;
   padding: 0;
-  background: #eee;
+  background: white; /* #eee; */
   font-family: sans-serif;
 }
 
@@ -32,117 +34,61 @@ body {
   border-radius: 3px;
 }
 
+/*TOPICS PAGES*/
+
+.topic-page h1 {
+  font-size: 3em;
+}
+.topic-page h1, h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;;
+} 
+
+.topic-page .main-content-type {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2em;
+  display: inline-block;
+  text-align: justify;
+  width: 55%;  
+}
+
+.main-content-type .staff-lines-and-spaces {
+  display: inline-block;
+  
+}
+
+
+/* QUIZ CONTAINER */
+.react-quiz-container {
+  width: 100%;
+  background-color: orange;
+}
+
+.react-quiz-container .questionWrapper .result-answer-wrapper {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+ 
+}
+
+.react-quiz-container .questionWrapper .result-answer-wrapper h3 {
+  background-color: white;
+}
+
+
+.react-quiz-container .questionWrapper .btn {
+  width: 75%;
+  margin: 0 auto;
+  border: none;
+  display: inline-block;
+}
+
+
+
+/*MEDIA QUERIES*/
 @media (min-width: 769px) {
   .container {
     margin: 2.5rem auto;
   }
 }
 
-/* Result Component */
-.result {
-  padding: 1.5rem 2.5rem;
-}
-
-/* Quiz Component */
-.answerOptions {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* QuestionCount Component */
-.questionCount {
-  padding: 1.5rem 2.5rem 0;
-  font-size: 14px;
-}
-
-/* Question Component */
-.question {
-  margin: 0;
-  padding: 0.5rem 2.5rem 1.5rem 2.5rem;
-}
-
-/* AnswerOption Component */
-.answerOption {
-  border-top: 1px solid #eee;
-}
-
-.answerOption:hover {
-  background-color: #eefbfe;
-}
-
-.radioCustomButton {
-  position: absolute;
-  width: auto;
-  opacity: 0;
-}
-
-.radioCustomButton,
-.radioCustomLabel {
-  display: inline-block;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.radioCustomLabel {
-  position: relative;
-  width: 100%;
-  margin: 0;
-  padding: 1.5rem 2.5rem 1.5rem 5rem;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.radioCustomButton ~ .radioCustomLabel:before {
-  position: absolute;
-  top: 20px;
-  left: 38px;
-  width: 28px;
-  height: 28px;
-  content: '';
-  display: inline-block;
-  vertical-align: middle;
-  background: #fff;
-  border: 1px solid #bbb;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
-
-.radioCustomButton:checked ~ .radioCustomLabel:before {
-  content: '';
-  background: #8bc53f;
-  background-size: 27px;
-  border-color: #8bc53f;
-}
-
-/* Animation */
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out 0.3s;
-}
-
-.fade-leave {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 1;
-}
-
-.fade-leave.fade-leave-active {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-appear {
-  opacity: 0;
-}
-
-.fade-appear.fade-appear-active {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
