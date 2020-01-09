@@ -112,8 +112,8 @@ class Comments extends Component {
           required
         />
         <textarea
-          rows="2"
-          cols="5"
+          rows="10"
+          cols="50"
           name="text"
           id="text"
           value={text}
@@ -142,7 +142,7 @@ class Comments extends Component {
               return (
                 <div className="comment" key={i}>
                   <header>
-                    <h2>{comment.name}</h2>
+                    <p>{comment.name}</p>
                    {/* <div className="comment-date">{moment(comment.date).fromNow()}</div> */}
                   </header>
                   <p>{comment.text}</p>

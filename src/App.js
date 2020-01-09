@@ -12,13 +12,14 @@ import Signup from './Signup/Signup';
 import Pitch from './Topic/Pitch';
 import MajorScalesAndKeySignatures from './Topic/MajorScalesAndKeySignatures';
 
-class App extends React.Component {
 
+class App extends React.Component {
 
   render() {
     return (
-
       <div className="App">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+
         <header className="App-header">
           <ul>
             <li><Link to="/login" >Login / </Link>

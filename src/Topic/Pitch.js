@@ -86,17 +86,20 @@ class Pitch extends React.Component {
           <br></br><br></br>
           <audio ref="audio_tag" src={altoClefAudio} controls />
           </div>
+          
           <br></br><br></br>
+    </div>      
+          <div className="quiz-link-section">
           <h2>Take the Pitch Quiz!</h2>
           <i><strong>Time to test what you have learned!</strong></i>
           <Link className="link-to-quiz" to="/pitch-quiz"><i><strong> Click here to take the Pitch Quiz.</strong></i></Link>
+          </div>
         </div>
-        <br></br><br></br>
-
+        <br></br>
         <div className="comments-section-intro">
           Have questions/comments about this material, or anything regarding AP Music Theory in general? Leave your name and a comment below!
         </div>
-    </div>
+  
 
 
         <div>
