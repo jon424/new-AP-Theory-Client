@@ -1,97 +1,91 @@
+import b1_1 from '../Quiz/QuizPics/b1_1.png';
+import b1_2 from '../Quiz/QuizPics/b1_2.png';
+import b1_3 from '../Quiz/QuizPics/b1_3.png';
+import b1_4 from '../Quiz/QuizPics/b1_4.png';
+
+import b2_1 from '../Quiz/QuizPics/b2_1.png';
+import b2_2 from '../Quiz/QuizPics/b2_2.png';
+import b2_3 from '../Quiz/QuizPics/b2_3.png';
+import b2_4 from '../Quiz/QuizPics/b2_4.png';
+
+import b3_1 from '../Quiz/QuizPics/b3_1.png';
+import b3_2 from '../Quiz/QuizPics/b3_2.png';
+import b3_3 from '../Quiz/QuizPics/b3_3.png';
+import b3_4 from '../Quiz/QuizPics/b3_4.png';
+
+import b4_1 from '../Quiz/QuizPics/b4_1.png';
+import b4_2 from '../Quiz/QuizPics/b4_2.png';
+import b4_3 from '../Quiz/QuizPics/b4_3.png';
+import b4_4 from '../Quiz/QuizPics/b4_4.png';
+
+
 export const MajorScalesAndKeySignaturesQuestions = {
   "quizTitle": "Major Scales And Key Signatures Quiz",
   "quizSynopsis": "This quiz will test your knowledge about concepts relating to Major Scales and Key Signatures, as covered on the AP Music Theory Exam.",
   "questions": [
-    {
-      "question": "This is the first question about major scales:",
-      "questionType": "text",
-      "answerSelectionType": "single",
-      "answers": [
-        "this.getState()",
-        "this.prototype.stateValue",
-        "this.state",
-        "this.values"
-      ],
-      "correctAnswer": "3",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "point": "20"
-    },
-    {
-      "question": "ReactJS is developed by _____?",
-      "questionType": "text",
-      "answerSelectionType": "single",
-      "answers": [
-        "Google Engineers",
-        "Facebook Engineers"
-      ],
-      "correctAnswer": "2",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "point": "20"
-    },
-    {
-      "question": "ReactJS is an MVC based framework?",
-      "questionType": "text",
-      "answerSelectionType": "single",
-      "answers": [
-        "True",
-        "False"
-      ],
-      "correctAnswer": "2",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "point": "10"
-    },
-    {
-      "question": "Which of the following concepts is/are key to ReactJS?",
-      "questionType": "text",
-      "answerSelectionType": "single",
-      "answers": [
-        "Component-oriented design",
-        "Event delegation model",
-        "Both of the above"
-      ],
-      "correctAnswer": "3",
-      "messageForCorrectAnswer": "Correct answer. Good job.",
-      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "point": "30"
-    },
-    {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    {//question 1
+      "question": "What is the key signature for D major?",
       "questionType": "photo",
-      "answerSelectionType": "single",
+      //"answerSelectionType": "single",
       "answers": [
-        "https://dummyimage.com/600x400/000/fff&text=A",
-        "https://dummyimage.com/600x400/000/fff&text=B",
-        "https://dummyimage.com/600x400/000/fff&text=C",
-        "https://dummyimage.com/600x400/000/fff&text=D"
+        `${b1_1}`,
+        `${b1_2}`,
+        `${b1_3}`,
+        `${b1_4}`
+      ],
+      "correctAnswer": "2",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "explanation": "D major has 2 sharps: F# and C#.",
+      "point": "20"
+    },
+    {//question 2
+      "question": "What is the key signature for E major?",
+      "questionType": "photo",
+      //"answerSelectionType": "single",
+      "answers": [
+        `${b2_1}`,
+        `${b2_2}`,
+        `${b2_3}`,
+        `${b2_4}`
       ],
       "correctAnswer": "1",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "explanation": "E major has four sharps: F#, C#, G# and D#.",
       "point": "20"
     },
-    {
-      "question": "What are the advantages of React JS?",
-      "questionType": "text",
-      "answerSelectionType": "multiple",
+    {//question 3
+      "question": "What is the key signature for C major?",
+      "questionType": "photo",
+      //"answerSelectionType": "single",
       "answers": [
-        "React can be used on client and as well as server side too",
-        "Using React increases readability and makes maintainability easier. Component, Data patterns improves readability and thus makes it easier for manitaining larger apps",
-        "React components have lifecycle events that fall into State/Property Updates",
-        "React can be used with any other framework (Backbone.js, Angular.js) as it is only a view layer"
+        `${b3_1}`,
+        `${b3_2}`,
+        `${b3_3}`,
+        `${b3_4}`
       ],
-      "correctAnswer": [1, 2, 4],
+      "correctAnswer": "3",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "point": "20"
-    }
+      "explanation": "C major has no sharps or flats.",
+      "point": "10"
+    },
+    {//question 4
+      "question": "What is the key signature for Bb major?",
+      "questionType": "photo",
+      //"answerSelectionType": "single",
+      "answers": [
+        `${b4_1}`,
+        `${b4_2}`,
+        `${b4_3}`,
+        `${b4_4}`
+      ],
+      "correctAnswer": "4",
+      "messageForCorrectAnswer": "Correct answer. Good job.",
+      "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
+      "explanation": "Bb major has two flats: Bb and Eb.",
+      "point": "30"
+    },
   ]
 } 

@@ -11,6 +11,8 @@ class Topics extends React.Component {
       <Link to="/pitch" >Pitch</Link>
       <br></br>
       <Link to="/major-scales-and-key-signatures" >Major Scales and Key Signatures</Link>
+      <br></br>
+      <p><i>More AP Music Theory topics coming soon!</i></p>
 
     
 
