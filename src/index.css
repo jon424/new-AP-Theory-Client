@@ -94,6 +94,10 @@ body {
   background-color: orange;
 }
 
+.react-quiz-container {
+  margin-left: 35% !important;
+
+}
 .react-quiz-container .questionWrapper .result-answer-wrapper {
   display: inline-block;
   text-align: center;
