@@ -42,7 +42,7 @@ const renderCustomResultPage = (obj) => {
 
   return (
     <React.Fragment>
-      <div className="react-quiz-container">
+      <div>
         <div className="questionWrapper">
           <div className="card-body">
             <h2>You have completed the Pitch Quiz! You got {obj.numberOfCorrectAnswers} correct answers out of {obj.numberOfQuestions} questions!</h2>

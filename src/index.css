@@ -145,14 +145,13 @@ body {
 
 
 /*TOPICS PAGES*/
-.img {
-  text-align: center;
-}
+img { width:100% !important; height: auto !important; text-align: center; }
 
 .audio {
   text-align: center;
   font-style: italic;
   font-size: 0.7em;
+  width: 100%;
 }
 
 .topic-page h1 {
@@ -168,7 +167,7 @@ body {
   font-size: 1.2em;
   display: inline-block;
   text-align: justify;
-  width: 55%;  
+  width: 80%;  
 }
 
 .main-content-type .staff-lines-and-spaces {
@@ -226,18 +225,20 @@ body {
   width: 100%;
 }
 
-.react-quiz-container {
-  margin-left: 35% !important;
-  border: red 2px solid;
+.react-quiz-container { margin-left: 15% !important; border: red 2px solid; width:70% !important; }
 
-}
+
 .questionWrapper{
   margin-left: auto;
   margin-right: auto;
 
 }
+
+.answerBtn{ display:inline-block !important; width:50% !important; }
+
 .react-quiz-container .questionWrapper img {
   width: 40% !important;
+  
 }
 
 .react-quiz-container .questionWrapper .react-quiz-container .questionWrapper {
@@ -272,6 +273,8 @@ body {
 }
 
 
+
+
 {/*
 .react-quiz-container .questionWrapper .result-answer-wrapper {
   display: inline-block;
@@ -291,6 +294,10 @@ body {
 */}
 
 
+
+
+
+/*for quiz, remove the margin for media queries (margin: 0)
 /*MEDIA QUERIES*/
 @media (min-width: 769px) {
   .container {
