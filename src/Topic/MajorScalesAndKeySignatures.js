@@ -50,18 +50,22 @@ class MajorScalesAndKeySignatures extends React.Component {
   <br></br><br></br>
   <img className="chromatic-scale-sharps" src={ChromaticScaleSharps} alt="chromatic-scale-sharps"/>
   <br></br><br></br>
+  <div className="listen-centered">
   Listen:
+  </div>
   <br></br>
-  <audio ref="audio_tag" src={ChromaticSharps} controls />
+  <audio className="audio" ref="audio_tag" src={ChromaticSharps} controls />
   <br></br><br></br>
   <h2>Sharps and Flats in the Chromatic Scale</h2>
   When the chromatic scale is written in <i>descending pitch</i> (from high to lower pitches), it is written with flats, like this:
   <br></br><br></br>
   <img className="chromatic-scale-flats" src={ChromaticScaleFlats} alt="chromatic-scale-flats"/>
   <br></br><br></br>
+  <div className="listen-centered">
   Listen:
+  </div>
   <br></br>
-  <audio ref="audio_tag" src={ChromaticFlats} controls />
+  <audio className="audio" ref="audio_tag" src={ChromaticFlats} controls />
   <br></br><br></br>
   
   <h2>The Major Scale</h2>
@@ -80,7 +84,9 @@ class MajorScalesAndKeySignatures extends React.Component {
 <h2>Major Scale Pattern of Whole and Half-Steps</h2>
           All major scales have the same pattern. <i>It is extremely helpful to memorize this pattern:</i>
           <br></br><br></br>
+          <div className="steps-centered">
           <strong>W-W-H-W-W-W-H</strong>
+          </div>
           <br></br><br></br>
     
 {/* <div className="naming-major-scales"> */}
@@ -89,15 +95,21 @@ class MajorScalesAndKeySignatures extends React.Component {
           <br></br><br></br>
           Step 1:  Start on F and write the musical alphabet until you get to the same letter (“F”) once again:
           <br></br><br></br>
+          <div className="f-major-notes">
           <span><strong>F &ensp; G &ensp; A &ensp; B &ensp; C &ensp; D &ensp; E &ensp; F</strong></span>
+          </div>
           <br></br><br></br>
           Step 2: Use the pattern of whole and half-steps (W-W-H-W-W-W-H). Use <i>only</i> sharps <strong>OR</strong> flats - not both. The letters in the musical alphabet from step 1 determine if you should use sharps or flats, since you need one unique letter in between the first and last pitches (“F,” in this case).
           <br></br><br></br>
+          <div className="f-major-notes-b-flat">
           <span><strong>F &emsp; G &emsp; A &emsp; Bb &emsp; C &emsp; D &emsp; E &emsp; F</strong></span>
+          </div>
           <br></br><br></br>
           Notice that the two half-steps used in this scale are A to Bb, and E to F. We needed to write “Bb” - not “A#” - since we need <i>one unique letter</i> in between the first and last “F’s”.  The scale would <strong>NOT</strong> be called F major looking like this:
           <br></br><br></br>
+          <div className="not-f-major">
           <span><strong>F &emsp; G &emsp; A &emsp; A# &emsp; C &emsp; D &emsp; E &emsp; F</strong></span>
+          </div>
           <br></br><br></br>
           <h2>Accidentals</h2>
           A pitch with a sharp or flat in its name is called an <strong>accidental.</strong> We need only one accidental to make the F major scale: Bb. So, we say that the <i>key signature</i> for F major looks like this (shown in both treble and bass clefs):
@@ -106,7 +118,9 @@ class MajorScalesAndKeySignatures extends React.Component {
           <br></br><br></br>
           Choose a different pitch to start on, and then build that major scale, using the <strong>W-W-H-W-W-W-H</strong> pattern. Notice that, when starting on C, there are no sharps or flats needed to create the pattern:
           <br></br><br></br>
+          <div className="c-major">
           <span><strong>C &emsp; D &emsp; E &emsp; F &emsp; G &emsp; A &emsp; B &emsp; C</strong></span>
+          </div>
           <br></br><br></br>
           Notice also that there is no black key inbetween E and F, or B and C. So, “E to F” and “B to C” are half-steps.
       
@@ -117,12 +131,16 @@ class MajorScalesAndKeySignatures extends React.Component {
           <br></br><br></br>
           Key signatures should be memorized so that you know the scale of the piece of music that you are reading. Sharps and flats, when placed in key signatures, are always shown in a specific order. The order of sharps is:
           <br></br><br></br>
+          <div className="order-of-sharps">
           <span><strong>F &emsp; C &emsp; G &emsp; D &emsp; A &emsp; E &emsp;
 B &emsp; F</strong></span>
+          </div>
           <br></br><br></br>
           ...and the order of flats is:
 <br></br><br></br>
+          <div className="order-of-flats">
           <span><strong>B &emsp; E &emsp; A &emsp; D &emsp; G &emsp; C &emsp; F &emsp; F</strong></span>
+          </div>
           <br></br><br></br>
           Some people like to remember the order of flats as the word “BEAD” followed by “GCF” - the math abbreviation for Greatest Common Factor. The order of sharps is simply the reverse of this: FCGDAEB.
           <br></br><br></br>
@@ -143,11 +161,13 @@ B &emsp; F</strong></span>
           <br></br><br></br>
           <img className="circle-of-fifths" src={Circle} alt="circle-of-fifths"/>
           <br></br><br></br>
+          <div className="quiz-link-section">
+          <h2>Take the Major Scales and Key Signatures Quiz!</h2>
           <i><strong>Time to test what you have learned!</strong></i>
-          <Link className="link-to-quiz" to="/pitch-quiz"><i><strong> Click here to take the Major Scales and Key Signatures Quiz.</strong></i></Link>
+          <Link className="link-to-quiz" to="/major-scales-and-key-signatures-quiz"><i><strong> Click here to take the Major Scales and Key Signatures Quiz.</strong></i></Link>
+          </div>
         </div>
         <br></br><br></br>
-
         <div className="comments-section-intro">
           Have questions/comments about this material, or anything regarding AP Music Theory in general? Leave your name and a comment below!
         </div>
@@ -159,7 +179,9 @@ B &emsp; F</strong></span>
 
 
 
+        <div className="home-link">
         <Link to="/">Home</Link>
+        </div>
 
 
       </React.Fragment>

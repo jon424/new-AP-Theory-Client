@@ -1,5 +1,7 @@
 import React from 'react';
-
+import { Route, Link, Switch, Router } from 'react-router-dom';
+import cover from '../Topic/TopicAttachments/cover-photo.jpg';
+import '../index.css';
 class Homepage extends React.Component {
   state = {}
   render() {
@@ -8,16 +10,15 @@ class Homepage extends React.Component {
         <div className="landing-page">
           <h1>AP Theory <i class="fas fa-music"></i></h1>
           <div className="main-content-type">
-          <h2>A guide for Advanced Placement Music Theory class!</h2> 
-          <br></br>
-          Contains Topic Overviews and graded practice Quizzes to help you succeed on the AP Music Theory Exam.
-<br></br>
-          How To Use This Site
-Click on Topic Overviews from the main menu (above) to learn about key topics on the AP Music Theory Exam. Take Quizzes over any and all topics. Sign-in to track your progress on the quiz material!
-    
-Inside AP Theory
-placeholder for screenshot of topic overview on fundamentals of Music
-Interactive charts and personalized statistics to help you stay on track with your goals.
+            <h2>A guide for Advanced Placement Music Theory class!</h2>
+
+            <h3>Contains <Link to="/topics">Topic Overviews</Link> and graded practice <Link to="/quizzes">Quizzes</Link> to help you succeed on the <strong>AP Music Theory Exam.</strong></h3>
+            <br></br>
+            <h2>How To Use This Site</h2>
+            <h3>Hover over Topics on the main menu (above) to learn about key topics on the AP Music Theory Exam. Take Quizzes over any and all topics in the Quizzes section.</h3>
+            <br></br>
+
+            <img className="cover-photo" src={cover} alt="keyboard-with-four-part-harmony-notation"/>
 
 
           </div>

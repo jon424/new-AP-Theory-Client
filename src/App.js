@@ -15,6 +15,16 @@ import MajorScalesAndKeySignatures from './Topic/MajorScalesAndKeySignatures';
 
 class App extends React.Component {
 
+myFunction = () => {
+    var x = document.getElementById("myTopnav");
+    console.log('clicked')
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
   render() {
     return (
       <div className="App">
@@ -39,18 +49,11 @@ class App extends React.Component {
     <Link to="/major-scales-and-key-signatures-quiz">Major Scales and Key Signatures Quiz</Link>
     </div>
   </div> 
-  <a href="javascript:void(0);" style={{"font-size": "15px;"}} class="icon" onclick="myFunction()">&#9776;</a>
+  <a href="javascript:void(0);" style={{"font-size": "15px;"}} class="icon" onClick={this.myFunction}>&#9776;</a>
 </div>
 
       
-{function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}}
+
 
 
        {/* <header className="App-header">

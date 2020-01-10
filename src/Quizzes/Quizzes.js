@@ -16,6 +16,10 @@ class Quizzes extends React.Component {
         <br></br>
         <p><i>More AP Music Theory quizzes coming soon!</i></p>
 
+        <div className="home-link">
+        <Link to="/">Home</Link>
+        </div>
+
 
 
       </React.Fragment>

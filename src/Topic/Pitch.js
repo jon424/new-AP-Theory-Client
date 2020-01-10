@@ -43,12 +43,14 @@ class Pitch extends React.Component {
           <br></br><br></br>
           Each line or space has a letter name from the alphabet. The “musical alphabet” only has seven different letters - much simpler than the English alphabet! The musical alphabet goes like this:
       <br></br><br></br>
+      <div className="musical-alphabet">
           <span><strong>A &ensp; B &ensp; C &ensp; D &ensp; E &ensp; F &ensp; G</strong></span>
+      </div>
           <br></br><br></br>
           Each musical pitch will be named after one of these letters. So, where is “A” on the staff? This depends on which clef is being used. A <strong>clef</strong> is a symbol that shows you where a specific pitch is located on the staff. Here are three commonly used clefs:
       <br></br><br></br>
       <div className="img">
-          <img src={threeDifferentClefs} alt="three-different-clefs" height="250" />
+          <img className="three-clefs" src={threeDifferentClefs} alt="three-different-clefs" height="250" />
       </div>    
           <br></br><br></br>
           <h2>G, C, and F Clefs</h2>
@@ -57,7 +59,7 @@ class Pitch extends React.Component {
           Here are the notes on the lines and spaces of the treble clef:
           <br></br><br></br>
           <div className="img">
-          <img src={trebleClefLinesAndSpaces} alt="three-different-clefs" width="40%" />
+          <img className="three-different-clefs" src={trebleClefLinesAndSpaces} alt="three-different-clefs" width="40%" />
           </div>
           <div className="audio">
           Here is what these pitches sound like:
@@ -68,7 +70,7 @@ class Pitch extends React.Component {
           Here are the notes on the lines and spaces of the bass clef:
           <br></br><br></br>
           <div className="img">
-          <img src={bassClefLinesAndSpaces} alt="bass-clef-lines-and-space-names" width="40%" />
+          <img className="bass-clef" src={bassClefLinesAndSpaces} alt="bass-clef-lines-and-space-names" width="40%" />
           </div>
           <div className="audio">
           Here is what these pitches sound like:
@@ -79,7 +81,7 @@ class Pitch extends React.Component {
           When the C clef is shown to display C on the third line, it is known as the <strong>alto clef</strong>. Here are the notes on the lines and spaces of the alto clef:
           <br></br><br></br>
           <div className="img">
-          <img src={altoClefLinesAndSpaces} alt="alto-clef-lines-and-space-names" width="40%" />
+          <img className="c-clef" src={altoClefLinesAndSpaces} alt="alto-clef-lines-and-space-names" width="40%" />
           </div>
           <div className="audio">
           Here is what these pitches sound like:
@@ -99,7 +101,7 @@ class Pitch extends React.Component {
         <div className="comments-section-intro">
           Have questions/comments about this material, or anything regarding AP Music Theory in general?<br></br> Leave your name and a comment below!
         </div>
-        <br></br><br></br>
+        
   
 
 
