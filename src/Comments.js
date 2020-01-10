@@ -123,7 +123,7 @@ class Comments extends Component {
           required
         />
         <br></br>
-        <button onClick={() => this.onSubmitComment} type="submit" disabled={submitting}>
+        <button onClick={() => this.onSubmitComment} type="submit" >
           Submit
       </button>
       </form>
