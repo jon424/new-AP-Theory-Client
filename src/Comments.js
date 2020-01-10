@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 //import moment from 'moment'
-
+const URL = 'https://ap-theory-server.herokuapp.com'
 class Comments extends Component {
   constructor(props) {
     super(props);
@@ -22,7 +22,7 @@ class Comments extends Component {
     const { topic } = this.props
 
     try {
-      const response = await fetch(`http://localhost:8000/comments/${topic}`)
+      const response = await fetch(`${URL}/comments/${topic}`)
       const comments = await response.json()
       console.log(comments);
 
@@ -45,7 +45,7 @@ class Comments extends Component {
 
     try {
       // POST to /comments
-      const response = await fetch(`http://localhost:8000/comments/`, {
+      const response = await fetch(`${URL}/comments/`, {
 
         headers: {
           Accept: 'application/json',

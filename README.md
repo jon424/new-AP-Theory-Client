@@ -1,13 +1,11 @@
 ##AP Theory
 
-A guide for Advanced Placement Music Theory class! Contains Topic Overviews and graded practice Quizzes to help you succeed on the AP Music Theory Exam.
+A guide for Advanced Placement Music Theory class! Contains Topic Overviews and graded practice Quizzes to help you succeed on the AP Music Theory Exam. Utilizes React, Express, and PostgreSQL.
 
 ###A live link of the project is available here: _____
 
-
-
-
-
+###Screenshot
+![Alt text](./Topic/TopicAttachments/ap-theory-screenshot.png?raw=true "AP Theory Homepage")
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
