@@ -111,6 +111,7 @@ class Comments extends Component {
           placeholder="Name"
           required
         />
+        <br></br>
         <textarea
           rows="10"
           cols="50"
@@ -118,9 +119,10 @@ class Comments extends Component {
           id="text"
           value={text}
           onChange={this.handleChange}
-          placeholder="Comment"
+          placeholder="Add a comment here"
           required
         />
+        <br></br>
         <button onClick={() => this.onSubmitComment} type="submit" disabled={submitting}>
           Submit
       </button>
@@ -129,7 +131,8 @@ class Comments extends Component {
 
     return (
       <section id="comments">
-        {success || error ? showError() || showSuccess() : commentForm()}
+        {success || error ? showError() || showSuccess() : ''}
+        {commentForm()}
         {comments.length > 0 &&
           comments
             .filter(comment => !comment.parent_comment_id)
@@ -142,7 +145,7 @@ class Comments extends Component {
               return (
                 <div className="comment" key={i}>
                   <header>
-                    <p>{comment.name}</p>
+                    <p className="input-name">{comment.name}:</p>
                    {/* <div className="comment-date">{moment(comment.date).fromNow()}</div> */}
                   </header>
                   <p>{comment.text}</p>

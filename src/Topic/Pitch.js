@@ -97,17 +97,20 @@ class Pitch extends React.Component {
         </div>
         <br></br>
         <div className="comments-section-intro">
-          Have questions/comments about this material, or anything regarding AP Music Theory in general? Leave your name and a comment below!
+          Have questions/comments about this material, or anything regarding AP Music Theory in general?<br></br> Leave your name and a comment below!
         </div>
+        <br></br><br></br>
   
 
 
         <div>
           {!this.state.error && <Comments topic={'pitch'} />}
         </div>
+        <br></br><br></br>
 
-
+        <div className="home-link">
         <Link to="/">Home</Link>
+        </div>
 
 
       </React.Fragment>
