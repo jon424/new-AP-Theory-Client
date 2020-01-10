@@ -6,6 +6,7 @@ class Topics extends React.Component {
   render() { 
     return ( 
       <React.Fragment>
+      <br></br><br></br><br></br><br></br><br></br>
       <div className="topic-page">
       <h1>Topics</h1>
       <Link className="link-tag" to="/pitch" >Pitch</Link>

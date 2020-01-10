@@ -45,17 +45,17 @@ const renderCustomResultPage = (obj) => {
       <div>
         <div className="questionWrapper">
           <div className="card-body">
-            <h2>You have completed the Pitch Quiz! You got {obj.numberOfCorrectAnswers} correct answers out of {obj.numberOfQuestions} questions!</h2>
+            <h2>You have completed the Major Scales and Key Signatures Quiz! You got {obj.numberOfCorrectAnswers} correct answers out of {obj.numberOfQuestions} questions!</h2>
 
             <h2>Your Score: {Math.ceil((obj.correctPoints / obj.totalPoints) * 100)} % </h2>
 
-            <div className="quiz-result-filter">
+          {/*  <div className="quiz-result-filter">
               <select>
                 <option value="all">All</option>
                 <option value="correct">Correct</option>
                 <option value="incorrect">Incorrect</option>
               </select>
-            </div>
+               </div> */}
 
             
             {/********************* question 1 results */}
@@ -255,6 +255,7 @@ const renderCustomResultPage = (obj) => {
 function MajorScalesAndKeySignaturesQuiz() {
   return (
     <React.Fragment>
+    <br></br><br></br><br></br><br></br>
 
       <Quiz quiz={MajorScalesAndKeySignaturesQuestions} showInstantFeedback={true} continueTillCorrect={true} showDefaultResult={false} customResultPage={renderCustomResultPage} onCompleteAction={onCompleteAction}  />
 

@@ -29,6 +29,7 @@ class MajorScalesAndKeySignatures extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <br></br><br></br><br></br><br></br><br></br>
       <div className="topic-page">
         <h1>Major Scales and Key Signatures</h1>
 <div className="main-content-type">

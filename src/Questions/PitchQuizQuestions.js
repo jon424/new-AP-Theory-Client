@@ -44,7 +44,7 @@ import a8_4 from '../Quiz/QuizPics/a8_4.png';
 export const PitchQuizQuestions =  {
   "quizTitle": "Pitch Quiz",
   "quizSynopsis": "Test your knowledge on reading musical pitch, as covered on the AP Music Theory Exam.",
-  "questions": [
+  "questions": [ //question 1
     {//`<img src={'../Quiz/QuizPics/pitch_quiz_q1.png'} alt='question_1' />`
     //"https://images.unsplash.com/photo-1554079501-a254f876fc77?ixlib=rb-1.2.1&w=1000&q=80"
     //question 1

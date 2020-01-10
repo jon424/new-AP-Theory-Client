@@ -15,60 +15,28 @@ import MajorScalesAndKeySignatures from './Topic/MajorScalesAndKeySignatures';
 
 class App extends React.Component {
 
-myFunction = () => {
-    var x = document.getElementById("myTopnav");
-    console.log('clicked')
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
 
   render() {
     return (
       <div className="App">
-      <div class="topnav" id="myTopnav">
-      <Link to="/">AP Theory <i class="fas fa-music"></i></Link>
-      
-  <div class="dropdown">
-    <button class="dropbtn">Topics  
-      <i class="fa fa-caret-down"></i>&emsp;&emsp;&emsp;&emsp;&emsp; |
-    </button>
-    <div class="dropdown-content">
-    <Link to="/pitch">Pitch</Link>
-    <Link to="/major-scales-and-key-signatures" >Major Scales and Key Signatures</Link>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">Quizzes 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-    <Link to="/pitch-quiz">Pitch Quiz</Link>
-    <Link to="/major-scales-and-key-signatures-quiz">Major Scales and Key Signatures Quiz</Link>
-    </div>
-  </div> 
-  <a href="javascript:void(0);" style={{"font-size": "15px;"}} class="icon" onClick={this.myFunction}>&#9776;</a>
-</div>
+      <header class="header">
+      <a href="/" className="logo">AP Theory <i class="fas fa-music"></i></a>
+    {/* <a href="" class="logo">Anthony</a> */}
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
 
-      
+  <li><a href="/topics" className="links" to="/topics">Topics</a></li>
+    {/*<li><a href="index.html" class="links">Home</a></li>*/}
+    <li><a href="/quizzes" className="links" to="/quizzes">Quizzes</a></li>
+   {/* <li><a href="about.html" class="links">About</a></li> */}
+   {/* <li><a href="portfolio.html" class="links">Portfolio</a></li> */}
+   {/* <li><a href="contact.html" class="links">Contact</a></li> */}
+  </ul>
+</header>
 
 
-
-       {/* <header className="App-header">
-          <ul>
-            <li><Link to="/login" >Login / </Link>
-              <Link to="/signup" >Sign Up</Link></li>
-            <li><Link to="/topics" >Topics</Link></li>
-            <li><Link to="/quizzes" >Quizzes</Link></li>
-          </ul></header>
-
-       */}  
-
-
-
-
+  
 
         <Route exact path='/' component={Homepage}>
         </Route>
@@ -105,4 +73,3 @@ myFunction = () => {
 
 
 export default App;
-

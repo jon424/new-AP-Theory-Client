@@ -25,6 +25,7 @@ class Pitch extends React.Component {
   render() {
     return (
       <React.Fragment>
+      <br></br><br></br><br></br><br></br><br></br>
     <div className="topic-page">
         <h1>Pitch</h1>
         <div className="main-content-type">
