@@ -517,6 +517,8 @@ textarea {
     width: 85%;
   }
   .keyboard-image {
+    display: block;
+    margin: 0 auto;
     width: 100%;
   }
   .chromatic-scale-sharps {

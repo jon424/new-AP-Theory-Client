@@ -9,7 +9,7 @@ class Homepage extends React.Component {
       <React.Fragment>
         <div className="landing-page">
         <br></br><br></br><br></br><br></br>
-          <h1>AP Theory <i class="fas fa-music"></i></h1>
+          <h1>AP Theory <i className="fas fa-music"></i></h1>
           <div className="main-content-type">
             <h2>A guide for Advanced Placement Music Theory class!</h2>
 
