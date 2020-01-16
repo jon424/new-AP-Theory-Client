@@ -35,7 +35,7 @@ class MajorScalesAndKeySignatures extends React.Component {
 <div className="main-content-type">
   <h2>Major Scales and Key Signatures</h2>
   A <strong>scale</strong> is simply a collection of pitches in whole and half-step patterns. There are many different kinds of scales based on the patterns of whole and half-steps that they contain. This section will focus on one of these types of scales: the <i>major scale</i>.
-  
+  <br></br><br></br>
   In order to understand any kind of scale, it helps to first understand the <strong>chromatic scale.</strong> The chromatic scale is a scale with all pitches spaced a half-step apart. If you look at a piano keyboard, play a key with your finger, and then move to the next closest key on the keyboard - which may be a black or a white key depending on which pitch you started with - and continue in this way, you are playing a chromatic scale. The piano keyboard is set up in such a way that each key is a half-step apart from the key closest to it - above (higher in pitch) or below (lower in pitch).
   <br></br><br></br>
   <img className="keyboard-image" src={Keyboard} alt="piano-keyboard" width="25%"/>

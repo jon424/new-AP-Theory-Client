@@ -163,8 +163,7 @@ img {
 }
 
 .main-content-type .staff-lines-and-spaces {
-  display: inline-block;
-  text-align: center;
+  
 }
 
 .musical-alphabet {
@@ -489,8 +488,123 @@ textarea {
 
 /*for quiz, remove the margin for media queries (margin: 0)
 /*MEDIA QUERIES*/
+
+/* iPhone 6/7/8 */
+@media only screen and (min-width: 374px) {
+.steps-centered {
+  margin-left: 20%;
+}
+.f-major-notes {
+  margin-left: 11%;
+}
+.F-major-key-signature {
+  display: block;
+  margin: 0 auto;
+}
+.sharp-keys-pic {
+  width: 115%;
+  margin-left: -25px;
+}
+.flat-keys-pic {
+  width: 115%;
+  margin-left: -25px;
+}
+.circle-of-fifths {
+  width: 115%;
+  margin-left: -22px;
+}
+#comments {
+  display: block;
+  margin: 0 auto;
+}
+input[type=text], select {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+}
+.keyboard-image {
+  width: 100%;
+}
+.chromatic-scale-sharps {
+  width: 115%;
+  margin-left: -20px;
+}
+.chromatic-scale-flats {
+  width: 115%;
+  margin-left: -20px;
+}
+
+}
+
+/* iPhone 6/7/8 PLUS */
+@media only screen and (min-width: 413px) {
+  .staff-lines-and-spaces {
+    width: 100%;
+  }
+  .musical-alphabet {
+    margin-left: 20%;
+  }
+  .three-clefs {
+    display: block;
+    margin: 0 auto;
+  }
+  .three-different-clefs, .bass-clef, .c-clef {
+    width: 100%;
+  }
+
+
+  .steps-centered {
+    margin-left: 20%;
+  }
+  .f-major-notes {
+    margin-left: 11%;
+  }
+  .F-major-key-signature {
+    display: block;
+    margin: 0 auto;
+  }
+  .sharp-keys-pic {
+    width: 115%;
+    margin-left: -25px;
+  }
+  .flat-keys-pic {
+    width: 115%;
+    margin-left: -25px;
+  }
+  .circle-of-fifths {
+    width: 115%;
+    margin-left: -22px;
+  }
+  #comments {
+    display: block;
+    margin: 0 auto;
+  }
+  input[type=text], select {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .keyboard-image {
+    width: 100%;
+  }
+  .chromatic-scale-sharps {
+    width: 115%;
+    margin-left: -20px;
+  }
+  .chromatic-scale-flats {
+    width: 115%;
+    margin-left: -20px;
+  }
+}
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   .topic-page .main-content-type {
     width: 90%;
   }
@@ -611,19 +725,20 @@ textarea {
     margin-left: 35%;
   }
   .f-major-notes{
-    margin-left: 25%;
+    margin-left: 30%;
   }
   .f-major-notes-b-flat{
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .not-f-major{
-    margin-left: 20%;
+    margin-left: 25%;
   }
   .F-major-key-signature {
-    margin-left: 33%;
+    display: block;
+    margin: 0 auto;
   }
   .c-major {
-    margin-left: 22%;
+    margin-left: 25%;
   }
   .order-of-sharps{
     margin-left: 23%;
@@ -650,34 +765,62 @@ textarea {
   .container {
     margin: 2.5rem auto;
   }
+  .musical-alphabet {
+    display: block;
+    margin-left: 35%;
+  }
+  .f-major-notes {
+    margin-left: 35%;
+  }
+  .f-major-notes-b-flat{
+    margin-left: 30%;
+  }
+  .not-f-major {
+    margin-left: 30%;
+  }
+  .F-major-key-signature {
+    display: block;
+    margin: 0 auto;
+  }
+  .c-major {
+    margin-left: 35%;
+  }
+  .order-of-sharps {
+    margin-left: 30%;
+  }
+  .order-of-flats {
+    margin-left: 30%;
+  }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .topic-page .main-content-type {
-    width: 90%;
+    width: 40%; /* was 90% */
   }
   
   .staff-lines-and-spaces {
-    width: 45%;
-    margin-left: 27%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
   }
 
   .musical-alphabet {
-    margin-left: 38%;
+    margin-left: 35%;
   }
   .three-clefs {
+    display: block;
+    margin: 0 auto;
     height: 287px;
-    margin-left: 38%;
+   
   }
   .three-different-clefs, .bass-clef, .c-clef {
-    height: 90px;
-    width: 56%;
-    margin-left: 22%;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
   }
   input[type=text], select {
     width: 55%;
-
   }
   textarea {
     width: 55%;
@@ -687,7 +830,8 @@ textarea {
   }
   .audio {
     width: 50%;
-    margin-left: 24%;
+    display: block;
+    margin: 0 auto;
   }
   .chromatic-scale-sharps {
     width: 100%;
@@ -699,28 +843,32 @@ textarea {
     width: 100%;
   }
   .steps-centered {
-    margin-left: 39%;
+    
+    margin-left: 30%;
+    
   }
   .f-major-notes{
-    margin-left: 36%;
+    margin-left: 25%;
   }
   .f-major-notes-b-flat{
-    margin-left: 32%;
+    margin-left: 17%;
   }
   .not-f-major{
-    margin-left: 32%;
+    margin-left: 17%;
   }
   .F-major-key-signature {
-    margin-left: 40%;
+    display: block;
+    margin: 0 auto;
+    
   }
   .c-major {
-    margin-left: 35%;
+    margin-left: 17%;
   }
   .order-of-sharps{
-    margin-left: 35%;
+    margin-left: 17%;
   }
   .order-of-flats{
-    margin-left: 35%;
+    margin-left: 17%;
   }
   .sharp-keys-pic {
     width: 100%;
@@ -743,7 +891,7 @@ textarea {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .topic-page .main-content-type {
-    width: 80%;
+    width: 40%; /* was 80% */
   }
   
   .staff-lines-and-spaces {
@@ -759,9 +907,11 @@ textarea {
     margin-left: 38%;
   }
   .three-different-clefs, .bass-clef, .c-clef {
+    display: block;
+    margin: 0 auto;
     height: 90px;
-    width: 33%;
-    margin-left: 30%;
+    width: 55%;
+    
   }
   input[type=text], select {
     width: 55%;
@@ -774,8 +924,10 @@ textarea {
     width: 100%;
   }
   .audio {
+    display: block;
+    margin: 0 auto;
     width: 50%;
-    margin-left: 24%;
+    
   }
   .chromatic-scale-sharps {
     width: 100%;
