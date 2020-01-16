@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 //import moment from 'moment'
+import * as moment from 'moment'
 const URL = 'https://ap-theory-server.herokuapp.com'
 class Comments extends Component {
   constructor(props) {
@@ -153,6 +154,7 @@ class Comments extends Component {
                     <div className="comment reply">
                       <header>
                         <h2>{child.name}</h2>
+                        {moment().format('MMMM Do YYYY, h:mm:ss a')}
                          {/*  <div className="comment-date">{moment(child.date).fromNow()}</div>*/}
                       </header>
                       <p>{child.text}</p>
