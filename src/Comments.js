@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-//import moment from 'moment'
-import * as moment from 'moment'
-const URL = 'https://ap-theory-server.herokuapp.com'
+import moment from 'moment'
+//import * as moment from 'moment'
+const URL = 'https://ap-theory-server.herokuapp.com' //'http://localhost:8000'
 class Comments extends Component {
   constructor(props) {
     super(props);
@@ -125,7 +125,7 @@ class Comments extends Component {
         />
         <br></br>
         <button onClick={() => this.onSubmitComment} type="submit" >
-          Submit
+          Submit 2
       </button>
       </form>
     )
@@ -147,17 +147,20 @@ class Comments extends Component {
                 <div className="comment" key={i}>
                   <header>
                     <p className="input-name">{comment.name}:</p>
+                    
                    {/* <div className="comment-date">{moment(comment.date).fromNow()}</div> */}
                   </header>
                   <p>{comment.text}</p>
+                  {'submitted on ' + moment().format('MM/DD/YYYY')}
                   {child && (
                     <div className="comment reply">
                       <header>
                         <h2>{child.name}</h2>
-                        {moment().format('MMMM Do YYYY, h:mm:ss a')}
+                        
                          {/*  <div className="comment-date">{moment(child.date).fromNow()}</div>*/}
                       </header>
                       <p>{child.text}</p>
+                      
                     </div>
                   )}
                 </div>

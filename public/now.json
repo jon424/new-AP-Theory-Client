@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "AP-Theory",
+  "alias": "api-theory",
+  "routes": [
+      { "handle": "filesystem" },
+      { "src": "/.*", "dest": "/index.html" }
+  ]
+}
