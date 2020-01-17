@@ -125,7 +125,7 @@ class Comments extends Component {
         />
         <br></br>
         <button onClick={() => this.onSubmitComment} type="submit" >
-          Submit 2
+          Submit
       </button>
       </form>
     )
@@ -151,7 +151,7 @@ class Comments extends Component {
                    {/* <div className="comment-date">{moment(comment.date).fromNow()}</div> */}
                   </header>
                   <p>{comment.text}</p>
-                  {'submitted on ' + moment().format('MM/DD/YYYY')}
+                  {'submitted on ' + moment().format('MMMM Do YYYY, h:mm:ss')}
                   {child && (
                     <div className="comment reply">
                       <header>

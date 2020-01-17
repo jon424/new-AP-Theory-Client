@@ -184,7 +184,7 @@ const renderCustomResultPage = (obj) => {
              </div>
  
              <div className="explaination">
-               {obj.questions[1].explanation}
+               {obj.questions[2].explanation}
              </div>
              <br></br><br></br>
              {/******************* END OF result answer wrapper for question 3 */}
@@ -230,7 +230,7 @@ const renderCustomResultPage = (obj) => {
              </div>
  
              <div className="explaination">
-               {obj.questions[1].explanation}
+               {obj.questions[3].explanation}
              </div>
              <br></br><br></br>
              {/******************* END OF result answer wrapper for question 4 */}
