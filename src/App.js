@@ -7,8 +7,6 @@ import Topics from './Topics/Topics';
 import Quizzes from './Quizzes/Quizzes';
 import PitchQuiz from './Quiz/PitchQuiz';
 import MajorScalesAndKeySignaturesQuiz from './Quiz/MajorScalesAndKeySignaturesQuiz';
-import Login from './Login/Login';
-import Signup from './Signup/Signup';
 import Pitch from './Topic/Pitch';
 import MajorScalesAndKeySignatures from './Topic/MajorScalesAndKeySignatures';
 
@@ -39,12 +37,6 @@ class App extends React.Component {
   
 
         <Route exact path='/' component={Homepage}>
-        </Route>
-
-        <Route path='/login' component={Login}>
-        </Route>
-
-        <Route path='/signup' component={Signup}>
         </Route>
 
         <Route path='/topics' component={Topics} >
