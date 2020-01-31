@@ -272,13 +272,16 @@ textarea {
 
 /* QUIZ CONTAINER */
 {/*    */}
+
+
 .react-quiz-container {
   width: 100%;
 }
 
 .react-quiz-container { 
-  margin-left: 15% !important; 
-  width:70% !important; }
+  margin-left: 15% !important;
+  width:70% !important;
+}     
 
 
 .questionWrapper{
@@ -287,20 +290,26 @@ textarea {
 
 }
 
-.answerBtn{ display:inline-block !important; width:50% !important; }
+.answerBtn{ 
+  display:inline-block !important;
+  width:30%; 
+  background-color: white;
+}
+
+
 
 .react-quiz-container .questionWrapper img {
-  width: 40% !important;
-  
+   width: 35% !important;
 }
 
-.react-quiz-container .questionWrapper .react-quiz-container .questionWrapper {
+/* .react-quiz-container .questionWrapper .react-quiz-container .questionWrapper {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
-.react-quiz-container .answerButton  {
-  width: 60% !important;
+.react-quiz-container .answerBtn.btn  {
+  width: 50%;
+  background-color: white;
  /* margin-left: 20%; */
 }
 
@@ -349,7 +358,6 @@ textarea {
 
 /*RESPONSIVE NAVBAR*/
 /* header */
-
 .header {
   background-color: black;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -469,6 +477,7 @@ textarea {
   .header li {
     float: left;
   }
+  
   .header li a {
     padding: 20px 30px;
   }
@@ -677,10 +686,16 @@ textarea {
   .circle-of-fifths {
     width: 100%;
   }
+
 }
+
+  /* NEW SIZE FOR MOBILE VIEWS QUIZ PICS */
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  
   .topic-page .main-content-type {
     width: 90%;
   }
@@ -980,5 +995,33 @@ textarea {
   }
 } 
 
+
+@media (max-width: 320px) {
+  .answerBtn { 
+   width: 75%;
+    display: inline-block;
+  }
+
+  .react-quiz-container .answerBtn.btn {
+    width: 75%;
+  }
+  .react-quiz-container .questionWrapper img {
+   width: 100% !important;
+ }
+}
+
+@media (max-width: 414px) {
+  .answerBtn { 
+   width: 75%;
+    display: inline-block;
+  }
+
+  .react-quiz-container .answerBtn.btn {
+    width: 75%;
+  }
+  .react-quiz-container .questionWrapper img {
+   width: 100% !important;
+ }
+}
 
 

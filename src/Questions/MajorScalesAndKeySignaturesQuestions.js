@@ -36,7 +36,7 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "correctAnswer": "2",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "D major has 2 sharps: F# and C#.",
+      "explanation": "D major has 2 sharps: F# and C#. Click the 'Next' button below!",
       "point": "20"
     },
 
@@ -54,7 +54,7 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "correctAnswer": "1",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "E major has four sharps: F#, C#, G# and D#.",
+      "explanation": "E major has four sharps: F#, C#, G# and D#. Click the 'Next' button below!",
       "point": "20"
     },
     {//question 3
@@ -70,7 +70,7 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "correctAnswer": "3",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "C major has no sharps or flats.",
+      "explanation": "C major has no sharps or flats. Click the 'Next' button below!",
       "point": "10"
     },
     {//question 4
@@ -86,7 +86,7 @@ export const MajorScalesAndKeySignaturesQuestions = {
       "correctAnswer": "4",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "Bb major has two flats: Bb and Eb.",
+      "explanation": "Bb major has two flats: Bb and Eb. Click the 'Next' button below!",
       "point": "30"
     },
    

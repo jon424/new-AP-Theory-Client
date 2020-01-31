@@ -61,7 +61,7 @@ export const PitchQuizQuestions =  {
     "correctAnswer": "1",
     "messageForCorrectAnswer": "Correct answer. Good job.",
     "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-    "explanation": "'A' is notated on the second space of the treble clef.",
+    "explanation": "'A' is notated on the second space of the treble clef. Click the 'Next' button below!",
     "point": "20"
     },
     {//question 2
@@ -77,7 +77,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "3",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'C' is notated on the second space of the bass clef.",
+      "explanation": "'C' is notated on the second space of the bass clef. Click the 'Next' button below!",
       "point": "20"
     },
     {//question 3
@@ -93,7 +93,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "2",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'F' is notated on the fourth line of the bass clef.",
+      "explanation": "'F' is notated on the fourth line of the bass clef. Click the 'Next' button below!",
       "point": "20"
     },
     {//question 4
@@ -109,7 +109,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "4",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'G' is notated on the second line of the treble clef.",
+      "explanation": "'G' is notated on the second line of the treble clef. Click the 'Next' button below!",
       "point": "20"
     },
     {//question 5
@@ -125,7 +125,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "2",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'B' is notated on the third line of the treble clef.",
+      "explanation": "'B' is notated on the third line of the treble clef. Click the 'Next' button below!",
       "point": "20"
     },
     {//question 6
@@ -141,7 +141,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "3",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'E' is notated on the fourth line of the alto clef.",
+      "explanation": "'E' is notated on the fourth line of the alto clef.Click the 'Next' button below!",
       "point": "20"
     },
     {//question 7
@@ -157,7 +157,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "1",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'D' is notated on the third line of the bass clef.",
+      "explanation": "'D' is notated on the third line of the bass clef.Click the 'Next' button below!",
       "point": "20"
     },
     {//question 8
@@ -173,7 +173,7 @@ export const PitchQuizQuestions =  {
       "correctAnswer": "4",
       "messageForCorrectAnswer": "Correct answer. Good job.",
       "messageForIncorrectAnswer": "Incorrect answer. Please try again.",
-      "explanation": "'F' is notated on the fifth line of the treble clef.",
+      "explanation": "'F' is notated on the fifth line of the treble clef. Click the 'Next' button below!",
       "point": "20"
     }
   ]

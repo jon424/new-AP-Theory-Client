@@ -1,8 +1,15 @@
 ## AP Theory
 
-A guide for Advanced Placement Music Theory class! Contains Topic Overviews and graded practice Quizzes to help you succeed on the AP Music Theory Exam. Utilizes React, Express, and PostgreSQL.
+A guide for Advanced Placement Music Theory class! Contains Topic Overviews and graded practice Quizzes to help you succeed on the AP Music Theory Exam. 
 
-### A live link of the project is available here: (https://new-ap-theory-client.now.sh)
+### A live link of the project is available here: (https://ap-theory.now.sh)
+
+## Stack:
+* Client: React
+* Web Server: Node and Express with PostgreSQL 
+* Database: PostgreSQL hosted on Heroku
+* Tests: Supertest, Chai, Jest, Enzyme
+
 
 ### Screenshot
 ![alt text](https://github.com/jon424/new-AP-Theory-Client/blob/5d175110016a56e234ac852d4cf69d35cf076748/src/Topic/TopicAttachments/ap-theory-screenshot.png "AP Theory Homepage")
