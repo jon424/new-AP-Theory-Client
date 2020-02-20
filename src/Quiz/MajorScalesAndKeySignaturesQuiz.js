@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Link, Switch, Router } from 'react-router-dom';
 import Quiz from 'react-quiz-component';
+import QuestionTemp from './QuestionTemp';
 import { MajorScalesAndKeySignaturesQuestions } from '../Questions/MajorScalesAndKeySignaturesQuestions';
 import Homepage from '../Homepage/Homepage';
 
@@ -32,7 +33,6 @@ const onCompleteAction = (obj) => {
   )
 }
 
-
 const renderCustomResultPage = (obj) => {
   //returns an array of all question text...
   const questionText = obj.questions.map(a => a.question);
@@ -49,217 +49,74 @@ const renderCustomResultPage = (obj) => {
 
             <h2>Your Score: {Math.ceil((obj.correctPoints / obj.totalPoints) * 100)} % </h2>
 
-          {/*  <div className="quiz-result-filter">
-              <select>
-                <option value="all">All</option>
-                <option value="correct">Correct</option>
-                <option value="incorrect">Incorrect</option>
-              </select>
-               </div> */}
+            <QuestionTemp
+              question={obj.questions[0].question}
+              btnOne={(obj.userInput[0] === 1) ? "answerBtn  incorrect" : "answerBtn btn"}
+              imgOne={b1_1}
+              imgTwo={b1_2}
+              imgThree={b1_3}
+              imgFour={b1_4}
+              btnTwo="answerBtn btn correct"
+              btnThree={(obj.userInput[0] === 3) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnFour={(obj.userInput[0] === 4) ? "answerBtn  incorrect" : "answerBtn btn "}
+              explanation={obj.questions[0].explanation}
+            />
 
-            
-            {/********************* question 1 results */}
-            <div className="result-answer-wrapper">
-              <h3>
-                <p>{obj.questions[0].question}</p>
-              </h3>
+            <QuestionTemp
+              question={obj.questions[1].question}
+              imgOne={b2_1}
+              imgTwo={b2_2}
+              imgThree={b2_3}
+              imgFour={b2_4}
+              btnOne="answerBtn btn correct"
+              btnTwo={(obj.userInput[1] === 2) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnThree={(obj.userInput[1] === 3) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnFour={(obj.userInput[1] === 4) ? "answerBtn  incorrect" : "answerBtn btn "}
+              explanation={obj.questions[1].explanation}
+            />
 
-              <div className="result-answer">
-              {/* */}
-                <div>
-              
-                  <button disabled className={(obj.userInput[0] === 1) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-                  <img src={b1_1} alt="answer-option-1"></img>
-                  </button>
-                </div>
+            <QuestionTemp
+              question={obj.questions[2].question}
+              imgOne={b3_1}
+              imgTwo={b3_2}
+              imgThree={b3_3}
+              imgFour={b3_4}
+              btnOne={(obj.userInput[2] === 1) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnTwo={(obj.userInput[2] === 2) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnThree="answerBtn btn correct"
+              btnFour={(obj.userInput[2] === 4) ? "answerBtn  incorrect" : "answerBtn btn "}
+              explanation={obj.questions[2].explanation}
+            />
 
-                <div>
-                  <button disabled className="answerBtn btn correct">
-                  <img src={b1_2} alt="answer-option-2"></img>
-                  </button>
-                </div>
+            <QuestionTemp
+              question={obj.questions[3].question}
+              imgOne={b4_1}
+              imgTwo={b4_2}
+              imgThree={b4_3}
+              imgFour={b4_4}
+              btnOne={(obj.userInput[3] === 1) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnTwo={(obj.userInput[3] === 2) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnThree={(obj.userInput[3] === 3) ? "answerBtn  incorrect" : "answerBtn btn"}
+              btnFour="answerBtn btn correct"
+              explanation={obj.questions[2].explanation}
+            />
 
-                <div>
-                  <button disabled className={(obj.userInput[0] === 3) ? "answerBtn btn incorrect" : "answerBtn btn"}>
-                  <img src={b1_3} alt="answer-option-3"></img>
-                  </button>
-                </div>
-
-                <div>
-                  <button disabled className={(obj.userInput[0] === 4) ? "answerBtn btn incorrect " : "answerBtn btn"}>
-                  <img src={b1_4} alt="answer-option-4"></img>
-                  </button>
-                </div>
-              </div>
-              </div>
-              </div>
-
-              <div className="explaination">
-                {obj.questions[0].explanation}
-               
-              </div>
-              <br></br><br></br>
-              {/******************* END OF result answer wrapper for question 1 */}
-
-
-
-
-              {/********************* question 2 results */}
-            <div className="result-answer-wrapper">
-            <h3>
-              <p>{obj.questions[1].question}</p>
-            </h3>
-
-            <div className="result-answer">
-            {/* */}
-              <div>
-                <button disabled className="answerBtn btn correct">
-                <img src={b2_1} alt="answer-option-1"></img>
-                </button>
-              </div>
-
-              <div>
-              <button disabled className={(obj.userInput[1] === 2) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-              <img src={b2_2} alt="answer-option-2"></img>
-                </button>
-              </div>
-
-              <div>
-              <button disabled className={(obj.userInput[1] === 3) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-              <img src={b2_3} alt="answer-option-3"></img>
-                </button>
-              </div>
-
-              <div>
-              <button disabled className={(obj.userInput[1] === 4) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-              <img src={b2_4} alt="answer-option-4"></img>
-                </button>
-              </div>
+            <div>
+              <Link to="/">Home</Link>
             </div>
-            </div>
-            </div>
-
-            <div className="explaination">
-              {obj.questions[1].explanation}
-            </div>
-            <br></br><br></br>
-            {/******************* END OF result answer wrapper for question 2 */}
-
-         
-
-
-             {/********************* question 3 results */}
-             <div className="result-answer-wrapper">
-             <h3>
-               <p>{obj.questions[2].question}</p>
-             </h3>
- 
-             <div className="result-answer">
-             {/* */}
-               <div>
-               <button disabled className={(obj.userInput[2] === 1) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-               <img src={b3_1} alt="answer-option-1"></img>
-                 </button>
-               </div>
- 
-               <div>
-               <button disabled className={(obj.userInput[2] === 2) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-               <img src={b3_2} alt="answer-option-2"></img>
-                 </button>
-               </div>
- 
-               <div>
-                 <button disabled className="answerBtn btn correct">
-                 <img src={b3_3} alt="answer-option-3"></img>
-                 </button>
-               </div>
- 
-               <div>
-               <button disabled className={(obj.userInput[2] === 4) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-               <img src={b3_4} alt="answer-option-4"></img>
-                 </button>
-               </div>
-             </div>
-             </div>
-             </div>
- 
-             <div className="explaination">
-               {obj.questions[2].explanation}
-             </div>
-             <br></br><br></br>
-             {/******************* END OF result answer wrapper for question 3 */}
-
-
-
-
-
-
-
-             {/********************* question 4 results */}
-             <div className="result-answer-wrapper">
-             <h3>
-               <p>{obj.questions[3].question}</p>
-             </h3>
- 
-             <div className="result-answer">
-             {/* */}
-               <div>
-               <button disabled className={(obj.userInput[3] === 1) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-                 <img src={b4_1} alt="answer-option-1"></img>
-                 </button>
-               </div>
- 
-               <div>
-               <button disabled className={(obj.userInput[3] === 2) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-                 <img src={b4_2} alt="answer-option-2"></img>
-                 </button>
-               </div>
- 
-               <div>
-               <button disabled className={(obj.userInput[3] === 3) ? "answerBtn btn incorrect" : "answerBtn btn" }>
-                 <img src={b4_3} alt="answer-option-3"></img>
-                 </button>
-               </div>
- 
-               <div>
-                 <button disabled className="answerBtn btn correct">
-                 <img src={b4_4} alt="answer-option-4"></img>
-                 </button>
-               </div>
-             </div>
-             </div>
- 
-             <div className="explaination">
-               {obj.questions[3].explanation}
-             </div>
-             <br></br><br></br>
-             {/******************* END OF result answer wrapper for question 4 */}
-
-
-
-
-            
-            
-             
-
-      <div>
-        <Link to="/">Home</Link>
+          </div>
+        </div>
       </div>
-
     </React.Fragment>
-
   )
-
 }
 
 function MajorScalesAndKeySignaturesQuiz() {
   return (
     <React.Fragment>
-    <br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br>
 
-      <Quiz quiz={MajorScalesAndKeySignaturesQuestions} showInstantFeedback={true} continueTillCorrect={true} showDefaultResult={false} customResultPage={renderCustomResultPage} onCompleteAction={onCompleteAction}  />
-
-
+      <Quiz quiz={MajorScalesAndKeySignaturesQuestions} showInstantFeedback={true} continueTillCorrect={true} showDefaultResult={false} customResultPage={renderCustomResultPage} onCompleteAction={onCompleteAction} />
 
     </React.Fragment>
   );

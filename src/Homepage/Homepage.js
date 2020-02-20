@@ -3,7 +3,7 @@ import { Route, Link, Switch, Router } from 'react-router-dom';
 import cover from '../Topic/TopicAttachments/cover-photo.jpg';
 import '../index.css';
 class Homepage extends React.Component {
-  state = {}
+  state = {};
   render() {
     return (
       <React.Fragment>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Link, Switch, Router } from 'react-router-dom';
 import Comments from '../Comments';
-//TopicAttachments...
 import CircleOfFifths from './TopicAttachments/Circle-of-Fifths-Simple-1024x1024.png';
 import Keyboard from './TopicAttachments/keyboard-image.jpg';
 import ChromaticScaleSharps from './TopicAttachments/chromatic-scale-sharps.png';
@@ -24,7 +23,6 @@ class MajorScalesAndKeySignatures extends React.Component {
 
     }
   }
-
 
   render() {
     return (
@@ -73,7 +71,7 @@ class MajorScalesAndKeySignatures extends React.Component {
   The <strong>major scale</strong> has a different pattern than the chromatic scale - it is arranged using both whole and half-steps. A <strong>whole step</strong> is made up of two half-steps. Just like in math, two halves equal one whole.
   <br></br><br></br>
   Imagine placing your finger on the pitch “C” on the piano (any C will do - take a look at the keyboard picture above if you don't have a keyboard in front of you). A whole step above "C" would be "D", since there are two half-steps between "C"and "D":
-   {/* <div className="half-step-explained"> */}
+
       <ul>
         <li>C to C# = 1 half-step</li>
         <br></br>
@@ -90,7 +88,7 @@ class MajorScalesAndKeySignatures extends React.Component {
           </div>
           <br></br><br></br>
     
-{/* <div className="naming-major-scales"> */}
+
       <h2>Naming Major Scales</h2>
           The name of a particular major scale starts with the name of the first pitch in the scale. Let’s “build” the F major scale.
           <br></br><br></br>

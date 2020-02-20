@@ -993,6 +993,9 @@ textarea {
   .home-link {
     margin-top: 20px;
   }
+  .react-quiz-container .answerBtn {
+    width: 50%;
+}
 } 
 
 
@@ -1022,6 +1025,10 @@ textarea {
   .react-quiz-container .questionWrapper img {
    width: 100% !important;
  }
+}
+
+.react-quiz-container .answerBtn {
+  width: 50% !important;
 }
 
 

@@ -41,7 +41,7 @@ class Comments extends Component {
 
     const { newComment, comments } = this.state
     const { topic } = this.props
-    
+
     newComment.topic = topic;
 
     try {
@@ -55,7 +55,7 @@ class Comments extends Component {
         method: 'post',
         body: JSON.stringify(newComment),
       })
-    
+
 
       // Append comment and reset newComment
       this.setState(prevState => ({
@@ -147,8 +147,7 @@ class Comments extends Component {
                 <div className="comment" key={i}>
                   <header>
                     <p className="input-name">{comment.name}:</p>
-                    
-                   {/* <div className="comment-date">{moment(comment.date).fromNow()}</div> */}
+
                   </header>
                   <p>{comment.text}</p>
                   {'submitted on ' + moment().format('MMMM Do YYYY, h:mm:ss')}
@@ -156,11 +155,10 @@ class Comments extends Component {
                     <div className="comment reply">
                       <header>
                         <h2>{child.name}</h2>
-                        
-                         {/*  <div className="comment-date">{moment(child.date).fromNow()}</div>*/}
+
                       </header>
                       <p>{child.text}</p>
-                      
+
                     </div>
                   )}
                 </div>
